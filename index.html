@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <meta description="Nishanth's Portfolio">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 51, 101);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .name {
+            display: flex;
+            align-content: center;
+            font-size: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: blue;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navitems a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.05rem;
+        }
+
+        .navitems {
+            margin: 20px;
+        }
+
+        .firstsec {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 40px;
+        }
+
+        .left {
+            font-size: 3rem;
+            color: beige;
+            width: 30%;
+        }
+
+        .right {
+            background-color: yellow;
+            width: 50%;
+        }
+
+        .right {
+            width: auto;
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        .nish {
+            color: aqua;
+        }
+
+        .line {
+            background-color: rgb(70, 12, 109);
+            height: 2px;
+            margin: 20px 20px;
+            justify-content: space-around;
+            border: 0;
+        }
+        .secondsec{
+            width: 20%;
+            margin: 1% 2%;
+            font-size: 1.5rem;
+        }
+        .secondsec a{
+            color: white;
+            text-decoration: none;
+        }
+        .secondsec a:hover{
+            font-size: 1.6rem;
+        }
+        .see{
+            font-size: 1rem;
+            margin: 10px 0px;
+            color: aqua;
+        }
+        .foot{
+            display: flex;
+            width: vb;
+            height: 18%;
+            background-color:darkslateblue;
+            justify-content: left;
+        }
+        .dev{
+            font-size: rem;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">Nishanth</div>
+            <div class="info">
+                <ul>
+                    <li class="navitems"><a href="index.html">Home</a></li>
+                    <li class="navitems"><a href="about.html">About</a></li>
+                    <li class="navitems"><a href="project.html">Projects</a></li>
+                    <li class="navitems"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsec">
+            <div class="left">Hello, My name is <span class="nish">Nishanth</span> I'm a web developer.<br>I'm
+                passionate to do <span id="element"></span></div>
+            <img class="right" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/full_front_back.jpg"
+                alt="web_dev">
+
+        </section>
+        <hr class="line">
+        <section class="secondsec"><a href="/">see more....</a>
+            <div class="see">You can go through the website to get the details...</div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['interactive websites', '&amp; creative websites.'],
+            typeSpeed: 80,
+        });
+    </script>
+    <footer>
+        <nav class="foot">
+            <div class="dev">Website developer:<span class="nish">Nishanth</span></div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

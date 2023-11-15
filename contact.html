@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 51, 101);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .name {
+            display: flex;
+            align-content: center;
+            font-size: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: blue;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navitems a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.05rem;
+        }
+
+        .navitems {
+            margin: 20px;
+        }
+
+        .contactsec {
+            font-size: 2rem;
+            margin: 2rem 2rem;
+            color: rgb(83, 234, 234);
+        }
+        .contactdiv{
+            display: flex;
+            justify-content:initial;
+            margin: 2rem 1rem;
+        }
+        .contactleft li{
+            color: cadetblue;
+            list-style: none;
+        }
+        .contactright li{
+            color:darkseagreen ;
+            list-style: none;
+        }
+        .git{
+            color: aliceblue;
+        }
+        .gitbtn{
+            width:4rem;
+            background-color: black;
+            color: antiquewhite;
+            padding: 8px 4px;
+            margin-left: 10px;
+            border-color: aquamarine;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .gitbtn a{
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+        .gitbtn a:hover{
+            font-size: 1.15rem;
+
+        }
+    </style>
+</head>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">Nishanth</div>
+            <div class="info">
+                <ul>
+                    <li class="navitems"><a href="index.html">Home</a></li>
+                    <li class="navitems"><a href="about.html">About</a></li>
+                    <li class="navitems"><a href="project.html">Projects</a></li>
+                    <li class="navitems"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contactsec">You can Contact Me through:
+            <hr>
+            <div class="contactdiv">
+                <div class="contactleft">
+                    <ul>
+                        <li>Email:</li>
+                        <li>Contact No:</li>
+                        <li>LinkedIn:</li>
+                        <li>Instagram:</li>
+                    </ul>
+                </div>
+                <div class="contactright">
+                    <ul>
+                        <li>21e32.nishanth@sjec.ac.in</li>
+                        <li>7676729896</li>
+                        <li>Nishanth Sherugar</li>
+                        <li>nishanth_kshatriya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="git">To visit github profile
+                <button class="gitbtn"><a href="https://github.com/nishanthn99">git</a></button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

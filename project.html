@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 51, 101);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .name {
+            display: flex;
+            align-content: center;
+            font-size: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: blue;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navitems a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.05rem;
+        }
+
+        .navitems {
+            margin: 20px;
+        }
+
+        .project {
+            margin: 2rem 2rem;
+            font-size: 2em;
+            color: aqua;
+            width: 90%;
+        }
+
+        .projlist {
+            font-size: 1.5rem;
+            color: antiquewhite;
+            line-height: 160%;
+        }
+
+        .projlist dd {
+            margin: 0 15px;
+        }
+
+        .projlist {
+            list-style: lower-roman;
+        }
+        .projimg{
+            width: vb;
+            font-size: 2rem;
+            color: aquamarine;
+            margin: 2rem 2rem;
+        }
+        .imgcontainer {
+            width: vb;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .imgcontainer img{
+            width: 60vb;
+            margin: 20px 5px;
+        } 
+    </style>
+</head>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">Nishanth</div>
+            <div class="info">
+                <ul>
+                    <li class="navitems"><a href="index.html">Home</a></li>
+                    <li class="navitems"><a href="about.html">About</a></li>
+                    <li class="navitems"><a href="project.html">Projects</a></li>
+                    <li class="navitems"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="project">Projects:
+            <hr>
+            <div class="projlist">
+                <dl>DataBase Project:</dl>
+                <dd>Travel Management System with SQL DataBase connectivty</dd>
+                <dl>Website Development:</dl>
+                <dd>Web Development using drag and drop feature of WordPress</dd>
+                <dl>Projects using Microcontroller:</dl>
+                <dd>Using Ardinuo and Node MCU as the microcontroller built the project prototype.</dd>
+            </div>
+        </section>
+        <section class="projimg">Project Images:
+        <hr>
+        <div class="imgcontainer">
+            <div><img src="projdatabase.png" alt="databaseproject" ></div>
+            <div><img src="wordpreesweb.jpg" alt="wordpressproject"></div>
+            <div><img src="aicteproj.jpg" alt="microcontrollerproject"></div>
+        </div>
+    </section>
+    </main>
+</body>
+
+</html>

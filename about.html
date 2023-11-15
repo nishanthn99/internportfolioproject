@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 51, 101);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .name {
+            display: flex;
+            align-content: center;
+            font-size: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: blue;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navitems a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.05rem;
+        }
+
+        .navitems {
+            margin: 20px;
+        }
+
+        .section {
+            width: 90%;
+            margin: 1rem 1rem;
+        }
+
+        .aboutline {
+            height: 2px;
+            color: blueviolet;
+        }
+
+        .about {
+            display: flex;
+            margin: 1rem 1rem;
+            justify-content:flex-start;
+
+        }
+
+        .det {
+            font-size: 4rem;
+            color: chartreuse;
+        }
+
+        .left {
+            font-size: 2rem;
+            color: burlywood;
+            margin: 0 2%;
+        }
+        .vl {
+            border-left: 4px solid green;
+            height: 25vh;
+        }
+        .right {
+            font-size: 1.1rem;
+            color: darkkhaki;
+            margin: 0 2%;
+        }
+
+        .right li {
+            text-decoration: none;
+            line-height: 224%;
+            list-style: none;
+        }
+        .nishimg{
+            height: 400px;
+            width: 280px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">Nishanth</div>
+            <div class="info">
+                <ul>
+                    <li class="navitems"><a href="index.html">Home</a></li>
+                    <li class="navitems"><a href="about.html">About</a></li>
+                    <li class="navitems"><a href="project.html">Projects</a></li>
+                    <li class="navitems"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="det">About Me</div>
+            <hr class="aboutline">
+            <div class="about">
+                <div class="left">
+                    <ul>
+                        <li>Name:</li>
+                        <li>Address:</li>
+                        <li>Education Details:</li>
+                        <li>Skills:</li>
+                        <li>Upcoming goal:</li>
+                    </ul>
+                </div>
+                <div class="vl"></div>
+                <div class="right">
+                    <ul>
+                        <li>Nishanth</li>
+                        <li>Naykana Katte House Mayyadi Byndoor Udupi Karnataka</li>
+                        <li>Pursuing Graduaction at St Joseph Enginnering College in CSE Branch</li>
+                        <li>Programming Skills,GitHub and Database Management</li>
+                        <li>gaining web development skills and more...</li>
+                    </ul>
+                </div>
+                <img class="nishimg"src="nishpic.png" alt="picture">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
